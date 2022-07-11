@@ -58,8 +58,14 @@ body::-webkit-scrollbar {
 .relative {
     position: relative;
 }
-.nav-btn {
-    margin-left: 23.6rem;   
+.nav-btn-link {
+    width: 21.2rem;
+    height: 6.4rem;
+    padding: 2rem 4rem;
+    background-image: url("img/landingPage/nav/navBtn.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 10rem;
 }
 .nav-list {
     padding-top: 1.5rem;
@@ -69,15 +75,13 @@ body::-webkit-scrollbar {
     font-weight: 600;
     font-size: 1.6rem;
     line-height: 2.4rem;
-    position: absolute;
-    top: 1.5rem;
-    left: 3.5rem;
 }
 .nav-btn-header {
     margin: 4.82rem 5.85rem 4rem 4.55rem;
 }
 .nav-btn-h-box {
     max-width: 18.6rem;
+    margin-right: 23rem;
 }
 .nav-btn-h {
     font-family: Jost;
@@ -177,9 +181,8 @@ a {
     margin: 0;
 }
 img {
-    display: inline-block;
-    vertical-align: middle;
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
 }
 .w-100 {
     width: 100%;
@@ -446,13 +449,15 @@ ul {
 }
 .HIW-img1b {
     position: absolute;
-    bottom: -5rem;
+    bottom: -25rem;
     left: -7.9rem;
+    width: 80%;
 }
 .HIW-img2b {
     position: absolute;
     top: 10.9rem;
     left: 21.3rem;
+    width: 80%;
 }
 
 
@@ -483,6 +488,9 @@ ul {
 }
 #roadmap-mob {
     display: none;
+}
+.roadmap-content {
+    height: 100rem;
 }
 .QR-card {
     width: 50rem;
@@ -521,8 +529,9 @@ ul {
 }
 .train {
     position: absolute;
-    top: 34rem;
-    right: 5.5rem;
+    top: -4rem;
+    right: 2rem;
+    width: 50%;
 }
 
 
@@ -554,6 +563,9 @@ ul {
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 2.4rem;
+}
+.team-card-social-icon {
+    width: 15%;
 }
 
 
@@ -603,29 +615,34 @@ ul {
 
 .community-bg {
     background-image: url("img/landingPage/body/community.svg");
+    background-size: cover;
 }
 .discord-container {
     margin: 13.6rem 58rem 2.4rem;
 }
 .community-h-box {
     margin: 0 28rem 1.6rem;
-    max-width: 88rem;
 }
 .community-p-box {
     margin: 0 27rem 4rem;
-    max-width: 70rem;
 }
 .community-btn {
-    margin: 0 51.9rem 13.6rem;
+    margin: 3rem 51.9rem 13.6rem;
+}
+.community-btn-link {
+    width: 21.2rem;
+    height: 6.4rem;
+    padding: 4rem 30rem;
+    background-image: url("img/landingPage/nav/navBtn.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .community-btn-p {
     font-family: Euclid;
     font-weight: 600;
     font-size: 1.6rem;
     line-height: 2.4rem;
-    position: absolute;
-    top: 2rem;
-    left: 6rem;
+    margin: -2.2rem 0 0 10rem;
 }
 
 
@@ -668,6 +685,9 @@ ul {
     font-weight: 500;
     font-size: 1.6rem;
     line-height: 2.4rem;
+}
+.twitter-icon, .discord-icon, .email-icon, .reddit-icon, .medium-icon, .youtube-icon {
+    width: 30%;
 }
 .link-container {
     margin-bottom: 4rem;
@@ -732,32 +752,20 @@ input::-webkit-input-placeholder {
 
 
 
-@media (max-width: 1024px) {
-    .team-card-social-icon {
-        width: 10%;
-    }
-    .HIW-img2b {
-        width: 80%;
-    }
-    .community-btn-p {
-        top: 2.5rem;
-        left: 8.5rem;
-    }
-    .train {
-        right: 4.5rem;
-    }
-}
-
 
 @media (max-width: 1023px) {
     html {
         font-size: calc(100vw/1023 * 10);
     }
+    .header-row {
+        padding: 2rem 6rem;
+    }
     .nav-logo {
         margin-right: 8rem;
     }
-    .nav-btn {
+    .nav-btn-link {
         margin-left: 0;
+        background-size: contain;
     }
     .hero, .immersive-img-container, .immersive-margin, .HIW-offerings, .footer-list1 {
         margin: 0;
@@ -792,20 +800,23 @@ input::-webkit-input-placeholder {
     }
     .land-supply-img, .HIW-intro-img {
         order: 1;
-        width: 100%;
     }
     .land-supply-h-box, .land-supply-p-box, .immersive-p {
-        max-width: 100%;
+        width: 100%;
     }
     .HIW-intro-container {
         margin: 0;
         padding-bottom: 0;
     }
+    .HIW-img1a {
+        width: 80%;
+    }
     .HIW-img1b {
         left: 0;
+        width: 60%;
     }
     .HIW-img2b {
-        width: auto;
+        width: 80%;
         left: 23.3rem;
     }
     #roadmap {
@@ -814,15 +825,22 @@ input::-webkit-input-placeholder {
     #roadmap-mob {
         display: block;
     }
+    .QR-card {
+        margin-bottom: 4rem;
+    }
     .roadmap-mob-container {
         padding-bottom: 5rem;
+    }
+    .roadmap-content {
+        height: auto;
     }
     .roadmap-h-box, .questions-h-box, .team-h-box {
         margin: 4rem auto 8rem;
     }
     .train {
-        top: 44rem;
+        top: 4rem;
         right: 0;
+        width: 100%;
     }
     .team-margin-top {
         margin-top: 8rem;
@@ -846,7 +864,7 @@ input::-webkit-input-placeholder {
         margin: 6rem auto 2.4rem;
     }
     .community-btn {
-        margin: 0 0 13.6rem;
+        margin: 3rem 0 13.6rem;
     }
     .footer-social-links {
         justify-content: space-between;
@@ -857,6 +875,7 @@ input::-webkit-input-placeholder {
     .textarea {
         margin-bottom: 0;
     }
+    
 }
 
 
@@ -864,14 +883,8 @@ input::-webkit-input-placeholder {
     html {
         font-size: calc(100vw/650 * 10);
     }
-    .community-bg {
-        background-size: contain;
-    }
-}
-
-@media (max-width: 485px) {
-    html {
-        font-size: calc(100vw/485 * 10);
+    .outer-padding {
+        margin: 0 6rem;
     }
     #header {
         display: none;
@@ -879,9 +892,6 @@ input::-webkit-input-placeholder {
     #mob-header {
         display: flex;
         padding: 2rem 0rem;
-    }
-    .outer-padding {
-        margin: 0 2rem;
     }
     .nav-logo {
         flex: 1 0 20%;
@@ -894,9 +904,7 @@ input::-webkit-input-placeholder {
     .closeIcon {
         display: none;
         position: absolute;
-        top: .5rem;
-        right: -4rem;
-        width: 20%;
+        top: 1rem;
     }
     .navIcon {
         display: block;
@@ -954,10 +962,8 @@ input::-webkit-input-placeholder {
         margin-bottom: 4rem;
         font-weight: 600;
     }
-    .nav-btn-p {
-        position: absolute;
-        top: 1.6rem;
-        left: 3rem;
+    .nav-btn-link  {
+        padding: 1.2rem 1rem;
     }
     .nav-list {
         padding-top: 3rem;
@@ -977,37 +983,48 @@ input::-webkit-input-placeholder {
     .video-p {
         margin-bottom: 10rem;
     }
-    .immersive-img-box {
-        width: 30rem;
-        height: 15rem;
+    .immersive1 {
+        margin-left: 1.2rem;
     }
-    .land-supply-h-box, .land-supply-p-box {
-        max-width: 40rem;
-    }
-    .land-supply-img-container, .questions-margin-top, .questions-content-container {
-        margin: 0;
+    .immersive2 {
+        margin-left: 3rem;
     }
     .land-supply-p-box {
-        margin-right: 0;
+        max-width: 54rem;
+    }
+    .land-supply-img-container {
+        margin-right: -6rem;
     }
     .slider-img-box {
         overflow-x: scroll;
+        position: relative;
     }
-    .slider-img-container {
-        width: 12rem;
-        height: 10rem;
+    .slider-img1 {
+        position: absolute;
+        top: 0;
+        left: 56rem;
+    }
+    .slider-img2 {
+        left: 28rem;
+    }
+    .slider-img3 {
+        background-image: url("img/landingPage/body/slider1.svg");
+        background-size: cover;
+        left: 56rem;
+    }
+    .slider-img4 {
+        display: block;
+        background-image: url("img/landingPage/body/slider1.svg");
+        left: 84rem;
     }
     .slider-keys {
         width: 40rem;
     }
-    .HIW-offerings-img {
-        order: 2;
-        margin-top: 10rem;
+    .HIW-img1b {
+        bottom: -15rem;
     }
     .HIW-img2b {
-        width: 90%;
-        top: 10rem;
-        left: 12rem;
+        left: 13.3rem;
     }
     .QR-card {
         width: 32rem;
@@ -1026,21 +1043,72 @@ input::-webkit-input-placeholder {
     .train-img-container {
         margin: 0 6rem 0 0;
     }
+    .flex-20 {
+        flex: 1 0 100%;
+    }
     .team-card-container {
         flex-wrap: wrap;
+    }
+    .team-card-social-icon {
+        width: 7%;
     }
     .team-card, .HIW-intro {
         margin-bottom: 4rem;
     }
+    .questions-margin-top {
+        margin-top: 5rem;
+    }
+}
+
+
+
+
+@media (max-width: 485px) {
+    html {
+        font-size: calc(100vw/485 * 10);
+    }
+    .outer-padding {
+        margin: 0 3rem;
+    }
+    .immersive-img-box {
+        width: 40rem;
+        height: 15rem;
+    }
+    .land-supply-h-box, .land-supply-p-box {
+        max-width: 40rem;
+    }
+    .questions-margin-top, .questions-content-container {
+        margin: 0;
+    }
+    .land-supply-img-container {
+        margin-right: -3rem;
+    }
+    .land-supply-p-box {
+        margin-right: 0;
+    }
+    .slider-img-container {
+        width: 20rem;
+        height: 16rem;
+    }
+    .slider-img1 {
+        left: 48rem;
+    }
+    .slider-img4 {
+        left: 72rem;
+    }
+    .HIW-offerings-img {
+        order: 2;
+        margin-top: 10rem;
+    }
+    .HIW-img2b {
+        top: 10rem;
+        left: 12rem;
+    }
     .questions-box {
         margin-right: 3rem;
     }
-    .flex-20 {
-        flex: 1 0 100%;
-    }
-    .community-btn-p {
-        top: 2.5rem;
-        left: 6.8rem;
+    .community-bg {
+        background-repeat: no-repeat;
     }
     .footer-margin-top {
         margin-top: 8rem;
